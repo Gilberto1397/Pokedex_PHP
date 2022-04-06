@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div id="pokedex">
+            <div id="left" class="dexside">
+                <div id="titulo">
+                    Pokemon titulo
+                </div>
+                <div id="imagem">
+                    <img src="./img/nenhum.jpg" default="./img/nenhum.jpg">
+                </div>
+                <div id="evolucoes">
+                    <div id="evoluiDe">
+                        Evolui de: <br> <span>NENHUM</span>
+                    </div>
+                    <div id="evoluiPara">
+                        Evolui para: <br> <span>NENHUM</span>
+                    </div>
+                </div>
+                <div id="tipos">
+                </div>
+                <div id="descricao">
+                    </div>
+            </div>
+            <div id="right" class="dexside">
+                <div id="busca">
+                    <input type="text" name="" id="" placeholder="Pesquise aqui" onkeyup="criarTabela()">
+                    <select onchange="criarTabela()">
+                        <<!-- option>Todos</option>
+                        <option>Água</option>
+                        <option>Fogo</option>
+                        <option>Gelo</option> para teste -->
+                    </select>
+                </div>
+                <div id="lista">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/js.js"></script>
+</body>
+</html>

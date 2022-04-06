@@ -1,0 +1,41 @@
+Criação de pokedex utilizando php
+
+    https://www.youtube.com/watch?v=YJ77PLVAq68&list=PLIUcOrGGQI6Q7iXUBgHWilAXeHdMkZRFS&index=3
+
+Aula 3 - configuração do local host    
+    alteração no arquivo hosts de C:\Windows\System32\drivers\etc
+    para entrar através de pokedex.local ao invés de local host 
+    -alteração do arquivos vhosts em D:\Arquivos\LARAVEL-XAMP-COMPOSER\Xampp 8.0\apache\conf\extra
+        COMENTAR APÓS TERMINAR
+
+Aula 4 - toda tabela criada necessita ao menos uma chave primaria para melhor consulta
+na tabela de tipos a chave unique irá travar a criação do pokemon com id_pokemon e nome de tipo        
+relacionamos a coluna anterior com numero_dex
+
+('Agua')
+,('Ave')
+,('Dragao')
+,('Eletrico')
+,('Fada')
+,('Fantasma')
+,('Fogo')
+,('Fossil')
+,('Gelo')
+,('Inseto')
+,('Lutador')
+,('Normal')
+,('Pedra')
+,('Planta')
+,('psiquico')
+,('Terra')
+,('Veneno')
+
+Aula 05: Inicio do backend e desenvolvimento da conexao ao DB, busca e output dos dados
+
+Aula 06: criação do .htaccess - arquivo de redirecionamento
+    ErrorDocument 404 /erros/404.php    #Pagina de erro au usuário tentar acessar uma pag q n existe
+
+Aula 7: Utilização do ternário no lugar do if
+
+aula 8 visto como resolver problema de CORS
+

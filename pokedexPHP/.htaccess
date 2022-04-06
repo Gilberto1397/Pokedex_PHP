@@ -1,0 +1,17 @@
+Options +FollowSymlinks +ExecCGI -Indexes
+
+ErrorDocument 404 /erros/404.php    
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteRule ^/?$                    /home.php [NC,L]   #Página inicial    #A rota principal será essa assim como quando tentar acessar uma rota sem outro parâmetro
+
+RewriteRule ^api/pokemons/?$        /sistema/pokemons.php [NC,L]   #Busca geral    #O ?$ para inserção de parâmetros como get por exemplo
+
+RewriteRule ^api/pokemons/(.*)?$    /sistema/pokemons.php?tipo=$1 [NC,L]   #Busca por tipo 
+
+RewriteRule ^api/tipos/?$           /sistema/tipos.php [NC,L] #Busca por tipo 
+
+</ifModule>
