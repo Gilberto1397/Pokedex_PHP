@@ -1,6 +1,6 @@
 var arraypokemons = [];
 var arrayTipos = [];
-var urlBackend = 'http://pokedex.local/api';
+var urlBackend = 'http://localhost:8000/sistema';
 var urlImagem = "./img/pokes";
 
 function arrayFilter() {
@@ -44,7 +44,7 @@ $(function() {
     {
         $.ajax({
             //type: "method",
-            url: urlBackend + '/pokemons',
+            url: urlBackend + '/pokemons.php',
             //data: "data",
             dataType: "JSON",
             success: function (response) {
@@ -59,7 +59,7 @@ $(function() {
     
         $.ajax({
             //type: "method",
-            url: urlBackend + '/tipos',
+            url: urlBackend + '/tipos.php',
             //data: "data",
             dataType: "JSON",
             success: function (response) {
